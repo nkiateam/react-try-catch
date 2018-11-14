@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class TryCatch extends Component {
 
-    static PropTypes = {
+    static propTypes = {
         debug: PropTypes.Boolean
     };
 
