@@ -1,16 +1,16 @@
 {
   "name": "react-try-catch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./lib/react-try-catch.js",
   "scripts": {
     "prepublish": "babel ./src -d lib",
     "example": "webpack-dev-server"
   },
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0-rc.3",
-    "react-dom": "^16.0.0-rc.3"
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
