@@ -1,6 +1,6 @@
 {
   "name": "react-try-catch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./lib/react-try-catch.js",
   "scripts": {
@@ -38,6 +38,9 @@
     "TryCatch",
     "ErrorHandling",
     "Polestar"
+  ],
+  "files": [
+    "lib"
   ],
   "author": "NKIA",
   "license": "MIT"
