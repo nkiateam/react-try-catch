@@ -1,6 +1,6 @@
 {
   "name": "react-try-catch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./lib/react-try-catch.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
