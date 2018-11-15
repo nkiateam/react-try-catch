@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class TryCatch extends Component {
+    // static propTypes = {
+    //     component: PropTypes.string,
+    //     debug: PropTypes.bool,
+    // };
 
-    static propTypes = {
-        debug: PropTypes.Boolean
-    };
+    // static defaultProps = {
+    //     component: 'TryCatch',
+    //     debug: false,
+    // };
 
-    static defaultProps = {
-        debug: false
-    };
+    static get ERROR() {
+        return {
+            RENDER: 'RENDER_ERROR',
+            SOURCE: 'SOURCE',
+        };
+    }
 
     constructor(props) {
         super(props);
@@ -18,16 +26,16 @@ class TryCatch extends Component {
 
     componentDidCatch(error, errorInfo) {
         this.setState({
-            error: error,
-            errorInfo: errorInfo
-        })
+            error,
+            errorInfo,
+        });
     }
 
     render() {
         if (this.state.error) {
             return (
                 <div>
-                    <h1>오류가 발생하였습니다.</h1>
+                    <h1>오류가 발생하였습니다.!!</h1>
                     <div style={{ whiteSpace: 'pre-wrap' }}>
                         {this.state.error && this.state.error.toString()}
                         <br />
@@ -36,6 +44,7 @@ class TryCatch extends Component {
                 </div>
             );
         }
+
         return this.props.children;
     }
 }
